@@ -24,7 +24,10 @@ class Triangle:
 abc = Triangle(37, 57, 78)
 
 """使用静态方法检验abc是否为三角形"""
-validity = abc.is_valid(3, 5, 8)
-print(validity)
+validity1 = abc.is_valid(3, 5, 8)  
+print(validity1)
+
+validity2 = abc.is_valid(34, 76, 56)
+print(validity2)
 
 print(f'三角形的周长是{abc.perimeter()}, 面积是{abc.area():.2f}')
