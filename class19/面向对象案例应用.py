@@ -48,3 +48,4 @@ class Poker:
 poker = Poker()
 poker.shuffle()
 print(poker.cards)
+
