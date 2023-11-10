@@ -64,15 +64,5 @@ class Player:
     def arrange(self):
         self.cards.sort()
 
-players = [Player('amy'), Player('bob'), Player('candy'), Player('dove')]
 
-poker = Poker()
-poker.shuffle()
-
-for i in range(13):
-    for player in players:
-        player.get_one(poker.deal())
-
-for player in players:
-    player.arrange()
-    print(f'{player.name}: {player.cards}')
+class
