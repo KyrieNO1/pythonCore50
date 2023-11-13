@@ -1,0 +1,16 @@
+import csv
+import random
+
+with open('class23/score.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['姓名', '语文', '数学', '英语'])
+    names = ['张三', '李四', '王五', '赵六', '钱七']
+    for name in names:
+        scores = [random.randrange(55,101) for subject in range(3)]
+        scores.insert(0, name)
+        writer.writerow(scores)
+        
+with open('class23/score.csv', 'r') as csvfile:
+    reader = csv.reader(csvfile)
+    for row in reader:
+        print(row)
