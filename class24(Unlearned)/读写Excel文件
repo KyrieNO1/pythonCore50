@@ -1,0 +1,5 @@
+import pandas as pd
+
+wb = pd.ExcelFile('class24/2022年股票数据.xlsx')
+sheetnames = wb.sheet_names
+print(sheetnames)
